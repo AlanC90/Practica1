@@ -60,7 +60,10 @@ for i in range(0, times):
                 
                     
     # Le pedimos al usuario el resultado.
-    resUser = input("Resultado: ")
+    if operator == '/':
+        resUser = input("Resultado (hasta 2 digitos decimales): ")
+    else:  
+        resUser = input("Resultado: ")
         
     #Se procesa si hay respuesta.
     if resUser != "":        
