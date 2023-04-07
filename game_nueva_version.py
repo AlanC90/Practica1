@@ -55,7 +55,7 @@ for i in range(0, times):
         case "/":               
             res = number_1 / number_2 
             #Acotar a 2 decimales.
-              #Se convierte de int/float a string, se acota el string, y este se convierte luego a float.
+              #Se convierte de float a string, se acota el string, y este se convierte luego a float.
             res = float(str(res)[0:4])            
                 
                     
