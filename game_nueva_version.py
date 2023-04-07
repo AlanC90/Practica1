@@ -14,11 +14,11 @@ times = 5
 # Esto toma la fecha y hora actual.
 init_time = datetime.now()
 
-#Correctos, incorrectos, sin respuesta, respuestas no validas.
+#Correctos, incorrectos, respuestas no validas y sin respuesta.
 correctos = 0
 incorrectos = 0
-sinResp = 0    
 respNoValidas = 0
+sinResp = 0    
 
 #Para validar respuesta usuario.
 digitos = string.digits
@@ -55,7 +55,7 @@ for i in range(0, times):
         case "/":               
             res = number_1 / number_2 
             #Acotar a 2 decimales.
-              #Se convierte de int/float a string, se acota el string, y se convierte luego a float.
+              #Se convierte de int/float a string, se acota el string, y este se convierte luego a float.
             res = float(str(res)[0:4])            
                 
                     
@@ -101,10 +101,11 @@ total_time = end_time - init_time
 print(f"\n Tardaste {total_time.seconds} segundos.")
 
 # Informamos cantidad de aciertos y desaciertos.
-print(f" Acertaste {correctos} veces. Te equivocaste {incorrectos} veces. Sin responder {sinResp} veces. Respuestas no válidas {respNoValidas}.\n")
+print(f" Acertaste {correctos} veces. Te equivocaste {incorrectos} veces. Respuestas no válidas: {respNoValidas}. Sin responder: {sinResp}.\n")
 
 
 #Fin del programa.
 print()
 print("Fin del programa.\n")
 print("--------------------\n")
+
